@@ -9,7 +9,6 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas  # Import FigureCanvas
 import plotly.express as px
 import pandas as pd
-from result import display_results  # 결과 페이지 함수 호출
 
 # Mediapipe initialization
 mp_pose = mp.solutions.pose
