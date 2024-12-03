@@ -10,6 +10,21 @@ from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas  # I
 import plotly.express as px
 import pandas as pd
 
+# Mediapipe 모델 파일 경로를 환경 변수로 설정
+os.environ["MEDIAPIPE_MODEL_PATH"] = "/tmp/mediapipe_models"
+
+# 쓰기 가능한 디렉토리 생성
+os.makedirs("/tmp/mediapipe_models", exist_ok=True)
+
+# Mediapipe Pose 사용 예시
+with mp.solutions.pose.Pose(
+    model_complexity=2,
+    min_detection_confidence=0.5,
+    min_tracking_confidence=0.5,
+    static_image_mode=False
+) as pose:
+    pass
+
 # Mediapipe initialization
 mp_pose = mp.solutions.pose
 mp_hands = mp.solutions.hands
