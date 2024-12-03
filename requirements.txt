@@ -1,8 +1,8 @@
-streamlit
-opencv-python-headless
-mediapipe
-numpy
-pillow
-matplotlib
-plotly
-pandas
+streamlit==1.25.0
+mediapipe==0.10.0
+opencv-python-headless==4.8.0.74
+numpy==1.24.3
+Pillow==9.4.0
+matplotlib==3.7.1
+plotly==5.17.0
+pandas==1.5.3
