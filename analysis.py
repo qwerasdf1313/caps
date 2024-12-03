@@ -544,3 +544,6 @@ def analysis_page():
             st.markdown(f"#### 위험 수준: <span style='color:{risk_color}'>{risk_text}</span>", unsafe_allow_html=True)
         else:
             st.warning("No poses detected during the video.")
+
+if __name__ == "__main__":
+    analysis_page()
